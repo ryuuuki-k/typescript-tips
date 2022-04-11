@@ -1,0 +1,11 @@
+{
+  "name": "typescript-tips",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ryuuuki-k/typescript-tips.git",
+  "author": "ryuki.k <ryuki.k0120@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ts-toolbelt": "^9.6.0"
+  }
+}
