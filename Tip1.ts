@@ -17,10 +17,10 @@ const singleFruitCount: SingleFruitCount = {
 // fruitCountsからSingleFruitCountと同じ型を作るTips
 type FruitCount = typeof fruitCounts;
 
-type NewSingleFruitCount = {
-  [K in keyof FruitCount]: {
-    [P in K]: FruitCount[P];
+type NewSingleFruitCount<T> = {
+  [K in keyof T]: {
+    [P in K]: T[P];
   };
-};
+}[keyof T];
 
-type test1 = NewSingleFruitCount[keyof FruitCount];
+type test1 = NewSingleFruitCount<FruitCount>;
